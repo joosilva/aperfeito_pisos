@@ -1,9 +1,63 @@
 @import "../../../style/Style.scss";
 
-.background-servicos {
+.servicos {
     width: 100vw;
+    min-height: 100vh;
 
-    @media(min-width: $desktop-largura-minima) {
-        height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        font-family: $fonte-principal;
+        color: $cor-texto-secundaria;
+
+        @media(max-width: $tablet-largura-maxima) {
+            padding-top: 2rem;
+        }
+
+        @media(min-width: $desktop-largura-minima) {
+            padding-top: 5vh;
+        }
+    }
+
+    .background-servicos {    
+        @media(max-width: $tablet-largura-maxima) {
+            display: flex;
+            flex-direction: column;
+    
+            .foto-1,
+            .foto-2,
+            .foto-3 {
+                padding: 5vw;
+                width: 90vw;
+            }
+        }
+    
+        @media(min-width: $desktop-largura-minima) {    
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+    
+            .foto-1,
+            .foto-2,
+            .foto-3 {
+                max-height: 40vh;
+                height: auto;
+                padding: 1.5rem;
+                transition: transform 0.3s;
+    
+                cursor: pointer;
+            }
+    
+            .foto-1:hover,
+            .foto-2:hover,
+            .foto-3:hover {
+                transform: scale(1.1);
+                
+                filter: drop-shadow(0 0 10px #00000070);
+            }
+        }
     }
 }

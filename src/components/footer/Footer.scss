@@ -1,1 +1,21 @@
 @import "../../style/Style.scss";
+
+.footer {
+    width: 100vw;
+    height: 25px;
+    background-color: $cor-principal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .texto-footer {
+        font-family: $fonte-principal;
+        color: $cor-texto-principal;
+        
+        img {
+            height: 20px;
+            margin-bottom: -6px;
+            margin-left: -3px;
+        }
+    }
+}
