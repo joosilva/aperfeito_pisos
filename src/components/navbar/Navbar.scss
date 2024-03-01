@@ -1,32 +1,114 @@
 @import "../../style/Style.scss";
 
 nav {
-    min-width: 100vw;
     background-color: $cor-principal;
-    color: $cor-texto-principal;
-    
-    @media (min-width: $celular-largura) {
-        
-    }
-    @media (min-width: $tablet-largura) {
-        
-    }
-    @media (min-width: $desktop-largura) {
-        
-        .navigation {
-            display: flex;
-            height: 65px;
-            justify-content: end;
-            align-items: center;
-            font-size: 16pt;
-            font-family: $fonte-principal;
-            font-weight: $fonte-bold;
 
-            li {
-                margin-right: 10px;
+    z-index: 10;
+
+    //HABILITAR ROLAGEM DA NAVBAR:
+
+    //position: sticky;
+    //top: 0;
+
+    @media (max-width: $tablet-largura-maxima) {
+        background: linear-gradient(90deg, $cor-branca 0%, $cor-principal 100%);
+
+        position: sticky;
+        top: 0;
+
+        .navbar {
+            height: 10vh;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            .logo {
+                width: 30%;
+                justify-content: end;
             }
 
+            .navigation,
+            .navigation-cel {
+                display: none;
+            }
+
+            .mostrarIcone {
+                display: flex;
+            }
+
+            .ocultarIcone {
+                display: none;
+            }
+
+            .menuOpen {
+                width: 100vw;
+                position: absolute;
+                display: flex;
+                flex-direction: column;
+
+                margin-top: calc(15vh + 0.75rem*14);
+                background-color: #0000008b;
+                z-index: 20;
+
+                li {
+                    padding: 0.75rem;
+
+                    a {
+                        display: flex;
+                        justify-content: center;
+
+                        font-family: $fonte-principal;
+                        color: $cor-texto-principal;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (min-width: $desktop-largura-minima) {
+        background: linear-gradient(90deg, $cor-branca 0%, $cor-principal 40%);
+
+        .menuOpen,
+        .navigation-cel,
+        .iconeMenu,
+        .iconeFecharMenu {
+            display: none;
         }
 
+        .navbar {
+            height: 65px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .logo {
+                height: 60px;
+                margin-top: 22px;
+                margin-left: 15px;
+
+            }
+
+            .navigation {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+
+                li {
+                    a {
+                        margin-right: 20px;
+                        text-decoration: none;
+                        font-family: $fonte-principal;
+                        color: $cor-texto-principal;
+                    }
+
+                    a:hover {
+                        text-decoration: underline;
+
+                        filter: drop-shadow(0 0 10px #00000077);
+                    }
+                }
+            }
+        }
     }
 }

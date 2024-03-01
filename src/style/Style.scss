@@ -1,20 +1,50 @@
-@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+//TAMANHO DE TELA
+$celular-largura-maxima: 480px;
+$tablet-largura-maxima: 760px;
+$desktop-largura-minima: 761px;
 
-//CORES
+//CORES:
 $cor-principal: #FF7604;
 $cor-secundaria: #969795;
+$cor-branca: #EEEEEE;
 
 $cor-texto-principal: #EEEEEE;
 
-//FONTE
+//FONTES:
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
 $fonte-principal: "Hanken Grotesk";
-$fonte-thin: 100;
-$fonte-light: 300;
-$fonte-regular: 500;
-$fonte-bold: 700;
-$fonte-extra-bold: 900; 
 
-//TAMANHO DE TELA
-$celular-largura: 320px;
-$tablet-largura: 481px;
-$desktop-largura: 769px;
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,700;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+$fonte-secundaria: "Montserrat";
+
+.titulo {
+    font-size: 18pt;
+}
+
+.subtitulo {
+    font-size: 14pt;
+}
+
+.descricao {
+    font-size: 10pt;
+}
+
+.thin {
+    font-weight: 100;
+}
+
+.light {
+    font-weight: 300;
+}
+
+.regular {
+    font-weight: 500;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.extra-bold {
+    font-weight: 900;
+}

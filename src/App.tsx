@@ -1,13 +1,16 @@
 import Navbar from "./components/navbar/Navbar";
-import Footer from "./components/footer/Footer"
+import Footer from "./components/footer/Footer";
 
-import "./App.css"
+import Ancoras from "./ancoras/Ancoras";
+
+import "./App.css";
 
 function App() {
 
   return (
     <>
       <Navbar />
+        <Ancoras />
       <Footer />
     </>
   )
