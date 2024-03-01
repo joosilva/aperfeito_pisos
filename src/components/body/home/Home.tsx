@@ -4,11 +4,11 @@ export const Home = () => {
     return (
         <div className="background">
             <div className="posicionamento-logo">
-                <img src="assets\nome_marca_fundo_transparente.png" alt="Logo da apêrfeito" className="logo" />
+                <img src="https://github.com/joosilva/aperfeito_pisos/blob/main/assets/nome_marca_fundo_transparente.png?raw=true" alt="Logo da apêrfeito" className="logo" />
             </div>
 
             <div className="posicionamento-foto">
-                <img src="assets\gilvan_transparente.png"
+                <img src="https://github.com/joosilva/aperfeito_pisos/blob/main/assets/gilvan_transparente.png?raw=true"
                     alt="Engenheiro, construtor com capacete de obra e camiseta preta e braços abertos com um sorriso no rosto."
                     className="foto" />
 

@@ -10,7 +10,7 @@ function Navbar() {
             <nav>
                 <div className="navbar">
                     <a href="#home">
-                        <img className="logo" src="assets/logo_nome_fundo_transparente.png" alt="Logo da apêfeito" />
+                        <img className="logo" src="https://github.com/joosilva/aperfeito_pisos/blob/main/assets/logo_nome_fundo_transparente.png?raw=true" alt="Logo da apêfeito" />
                     </a>
                     <div className={menuOpen ? "menuOpen" : "navigation-cel"}>
                         <ul className="subtitulo regular">
@@ -31,12 +31,12 @@ function Navbar() {
 
                     <div className={!menuOpen ? "mostrarIcone" : "ocultarIcone"}
                         onClick={() => { setMenuOpen(!menuOpen) }}>
-                        <img className="iconeMenu" src="assets/icone_menu.png" alt="Ícone para abrir o menu" />
+                        <img className="iconeMenu" src="https://github.com/joosilva/aperfeito_pisos/blob/main/assets/icone_menu.png?raw=true" alt="Ícone para abrir o menu" />
                     </div>
 
                     <div className={menuOpen ? "mostrarIcone" : "ocultarIcone"}
                         onClick={() => { setMenuOpen(!menuOpen) }}>
-                        <img className="iconeFecharMenu" src="assets/icone_fechar_menu.png" alt="Ícone para fechar o menu" />
+                        <img className="iconeFecharMenu" src="https://github.com/joosilva/aperfeito_pisos/blob/main/assets/icone_fechar_menu.png?raw=true" alt="Ícone para fechar o menu" />
                     </div>
 
                     <ul className="navigation subtitulo bold">
