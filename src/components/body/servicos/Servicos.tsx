@@ -14,7 +14,7 @@ export const Servicos = () => {
                     observer.unobserve(entry.target);
                 }
             });
-        }, { threshold: 0.4 });
+        }, { threshold: 0.6 });
 
         if (elementoRef.current) {
             observer.observe(elementoRef.current);

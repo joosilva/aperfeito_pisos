@@ -1,1 +1,13 @@
 @import "../../../style/Style.scss";
+
+.contato {
+    width: 100vw;
+    
+    @media(max-width: $tablet-largura-maxima) {
+        height: 50vh;
+    }
+    
+    @media(min-width: $desktop-largura-minima) {
+        height: 75vh;
+    }
+}
