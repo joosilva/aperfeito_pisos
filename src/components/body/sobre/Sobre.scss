@@ -6,19 +6,47 @@
     justify-content: center;
     align-items: center;
     width: 100vw;
-    height: 100vh;
+    
+    background-image: url("https://github.com/joosilva/aperfeito_pisos/blob/main/assets/background_sobre.jpg?raw=true");
 
-    .titulo {
+    @media(max-width: $tablet-largura-maxima) {
+        height: 60vh;
+        background-position:center;
+        
+        .background-cor {
+            height: 60vh;
+        }
+    }
+
+    @media(min-width: $desktop-largura-minima) {
+        height: 100vh;
+        
+        .background-cor {
+            height: 100vh;
+        }
+    }
+
+    .background-cor {
+        width: 100vw;
+        background-color: #00000061;
+        position: absolute;
+    }
+
+
+    .titulo, .descricao {
         font-family: $fonte-principal;
         color: $cor-texto-principal;
+    }
 
+    .titulo {
         padding: 1rem;
+
+        z-index: 1;
     }
 
     .descricao {
-        font-family: $fonte-secundaria;
-        color: $cor-texto-principal;
-
         padding: 0 1rem 0 1rem;
+
+        z-index: 1;
     }
 }
