@@ -16,7 +16,17 @@
         position: absolute;
         z-index: 1;
     }
-    
+
+    @keyframes fadeIn {
+        from {
+            transform: scale(0);
+        }
+
+        to {
+            transform: scale(1);
+        }
+    }
+
     .posicionamento-foto {
         width: 100%;
         height: 100%;
@@ -27,7 +37,19 @@
         position: absolute;
         z-index: 2;
     }
-    
+
+    @keyframes slideIn {
+        from {
+            opacity: 0;
+            transform: translateX(100%);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
     .posicionamento-texto {
         width: 100%;
         height: 100%;
@@ -37,14 +59,14 @@
 
         position: absolute;
         z-index: 3;
-
+        
         .texto {
             font-family: $fonte-principal;
             color: #FFFFFF75;
             letter-spacing: 2rem;
         }
     }
-    
+
     @media (max-width: $tablet-largura-maxima) {
         height: 80vh;
 
@@ -56,15 +78,19 @@
         .foto {
             max-width: 100vw;
             margin-bottom: 45vw;
+
+            animation: fadeIn 1s forwards;
         }
 
         .texto {
             font-size: 20vw;
-            margin-bottom:calc(20% + 45vw);
+            margin-bottom: calc(20% + 45vw);
             padding-left: 2rem;
+
+            animation: slideIn 1s forwards;
         }
     }
-    
+
     @media (min-width: $desktop-largura-minima) {
         height: 100vh;
 
@@ -72,15 +98,19 @@
             max-width: 100vw;
             width: 55%;
         }
-        
+
         .foto {
             max-width: 100vw;
             height: 80%;
+
+            animation: fadeIn 1s forwards;
         }
 
         .texto {
             font-size: 20vw;
             margin-bottom: 10%;
+
+            animation: slideIn 1s forwards;
         }
     }
 }
