@@ -1,1 +1,24 @@
 @import "../../../style/Style.scss";
+
+.background-sobre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+
+    .titulo {
+        font-family: $fonte-principal;
+        color: $cor-texto-principal;
+
+        padding: 1rem;
+    }
+
+    .descricao {
+        font-family: $fonte-secundaria;
+        color: $cor-texto-principal;
+
+        padding: 0 1rem 0 1rem;
+    }
+}
