@@ -1,1 +1,9 @@
 @import "../../../style/Style.scss";
+
+.background-servicos {
+    width: 100vw;
+
+    @media(min-width: $desktop-largura-minima) {
+        height: 100vh;
+    }
+}
