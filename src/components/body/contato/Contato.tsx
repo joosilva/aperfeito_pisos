@@ -7,8 +7,13 @@ export const Contato = () => {
             <h1 className="subtitulo bold">e solicite um orçamento gratuitamente:</h1>
 
 
-            <button>
+            <button className="botao-1">
                 <a className="subtitulo regular" href="">WhatsApp</a>
+                <img src="https://github.com/joosilva/aperfeito_pisos/blob/main/assets/whatsapp_redondo.png?raw=true" alt="" />
+            </button>
+            
+            <button className="botao-2">
+                <a className="subtitulo regular" href="">Email</a>
                 <img src="https://github.com/joosilva/aperfeito_pisos/blob/main/assets/whatsapp_redondo.png?raw=true" alt="" />
             </button>
 

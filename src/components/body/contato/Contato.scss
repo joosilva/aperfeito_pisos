@@ -21,11 +21,22 @@
         height: 75vh;
     }
 
+    .botao-1 {
+        background-color: $cor-principal;
+    }
+
+    .botao-2 {
+        background-color: $cor-secundaria;
+
+        &:hover {
+            background-color: $cor-principal;
+        }
+    }
+
     button {
         border-radius: 2rem;
         margin: 1.5rem 0;
         padding: 0.5rem 1rem;
-        background-color: $cor-principal;
 
         display: flex;
         align-items: center;
