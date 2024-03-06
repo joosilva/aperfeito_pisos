@@ -70,16 +70,16 @@ export const Servicos = () => {
                 <div className="card-overlay">
                     <div className={`card-${cardAberto === 0 ? 'vinilico' : cardAberto === 1 ? 'laminado' : cardAberto === 2 ? 'boieserie' : 'rodape'}`}>
                         <button onClick={handleFecharCard} className="fechar-card descricao extra-bold">X</button>
-                        
+
                         <h1 className="titulo-card titulo bold">{cardAberto === 0 ? 'Piso Vinílico' : cardAberto === 1 ? 'Piso Laminado' : cardAberto === 2 ? 'Boieserie' : 'Rodapé em Poliestileno'}</h1>
-                        
+
                         <div className="card-foto">
                             <div className="fotos-desktop">
-                            <img className="foto-desktop" src={cardAberto === 0 ? "https://github.com/joosilva/aperfeito_pisos/blob/main/assets/card_vinilico.png?raw=true"
-                                : cardAberto === 1 ? "https://github.com/joosilva/aperfeito_pisos/blob/main/assets/card_laminado.png?raw=true"
-                                    : cardAberto === 2 ? "https://github.com/joosilva/aperfeito_pisos/blob/main/assets/card_boieserie.png?raw=true"
-                                        : "https://github.com/joosilva/aperfeito_pisos/blob/main/assets/card_rodape.png?raw=true"}
-                            />
+                                <img className="foto-desktop" src={cardAberto === 0 ? "https://github.com/joosilva/aperfeito_pisos/blob/main/assets/card_vinilico.png?raw=true"
+                                    : cardAberto === 1 ? "https://github.com/joosilva/aperfeito_pisos/blob/main/assets/card_laminado.png?raw=true"
+                                        : cardAberto === 2 ? "https://github.com/joosilva/aperfeito_pisos/blob/main/assets/card_boieserie.png?raw=true"
+                                            : "https://github.com/joosilva/aperfeito_pisos/blob/main/assets/card_rodape.png?raw=true"}
+                                />
                             </div>
                             <p className="descricao regular">
                                 {cardAberto === 0 ? 'O "Piso Vinílico" é ideal para interiores agregando elegancia e praticidade ao seu lar ou ambiente de trabalho. Sua composição é de PVC, o que permite a fácil limpeza do piso. Este revestimento possui uma fácil e rápida instalação por colagem, deixando o ambiente muito bem nivelado e trazendo mais praticidade e menos dor de cabeça na hora de realizar sua reforma.'

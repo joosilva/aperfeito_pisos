@@ -126,8 +126,15 @@
         width: 100vw;
         height: 100vh;
 
-        .fotos-desktop {
-            visibility: hidden;
+        .card-foto {
+            p {
+                position: absolute;
+                padding-right: 1rem;
+            }
+
+            .fotos-desktop {
+                visibility: hidden;
+            }
         }
     }
 }
@@ -155,7 +162,7 @@
     .card-foto {
         display: flex;
         align-items: center;
-   
+
         .fotos-desktop {
             display: flex;
             justify-content: center;
