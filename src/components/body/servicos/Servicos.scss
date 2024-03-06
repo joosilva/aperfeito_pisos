@@ -110,13 +110,13 @@
     width: 100vw;
     height: 100vh;
     top: 0%;
-    background-color: rgba(0, 0, 0, 0.5); 
+    background-color: rgba(0, 0, 0, 0.5);
     z-index: 5;
     display: flex;
     justify-content: center;
     align-items: center;
 
-    @media (max-width: $tablet-largura-maxima) {     
+    @media (max-width: $tablet-largura-maxima) {
         position: fixed;
 
         display: flex;
@@ -126,7 +126,7 @@
         width: 100vw;
         height: 100vh;
 
-        .foto-desktop {
+        .fotos-desktop {
             visibility: hidden;
         }
     }
@@ -134,7 +134,7 @@
 
 .card-vinilico,
 .card-laminado,
-.card-boieserie, 
+.card-boieserie,
 .card-rodape {
     position: fixed;
     background-color: $cor-branca;
@@ -142,7 +142,7 @@
     z-index: 10;
     width: 60%;
     max-width: 500px;
-    border-radius: 12px; 
+    border-radius: 12px;
 
     .titulo-card {
         font-family: $fonte-principal;
@@ -152,9 +152,23 @@
         justify-content: center;
     }
 
-    .foto-desktop {
-        width: 50%;
-        height: auto;
+    .card-foto {
+        display: flex;
+        align-items: center;
+   
+        .fotos-desktop {
+            display: flex;
+            justify-content: center;
+            width: 50%;
+            padding: 2rem 1rem;
+
+            .foto-desktop {
+                width: 20vw;
+
+                border-radius: 1rem;
+            }
+
+        }
     }
 
     p {
@@ -163,6 +177,14 @@
 
         margin-top: 15px;
         text-align: center;
+
+        @media (min-width: $desktop-largura-minima) {
+            width: 50%;
+
+            padding-right: 3.5rem;
+
+            font-size: 12pt;
+        }
     }
 }
 
