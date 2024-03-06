@@ -1,5 +1,5 @@
 .whatsapp {
-    position: fixed;
+    position: absolute;
 
     height: 100vh;
     width: 100vw;
@@ -12,13 +12,15 @@
 
     a.whatsapp {
         img.whatsapp {
-            width: 10vw;
-            height: 10vh;
+            width: 7vw;
+            height: auto;
+
+            padding: 1.5rem;
 
             z-index: 1000;
 
             &:hover {
-                filter: drop-shadow(0 0 10px #00000064);
+                filter: drop-shadow(0 0 3px #00000064);
             }
         }
     }
