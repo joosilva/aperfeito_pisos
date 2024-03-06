@@ -2,22 +2,49 @@ import { useEffect, useState } from "react";
 import "./Home.scss";
 
 export const Home = () => {
+    const [currentIndex, setCurrentIndex] = useState(0);
+
+    const imagens = [
+        'imagem1.jpg',
+        'imagem2.jpg',
+        'imagem3.jpg',
+        'imagem4.jpg'
+    ];
+
+    const nextSlide = () => {
+        const nextIndex = (currentIndex + 1) % imagens.length;
+        setCurrentIndex(nextIndex);
+    };
+
+    useEffect(() => {
+        const interval = setInterval(nextSlide, 10000);
+        return () => clearInterval(interval);
+    }, [currentIndex]);
+
+    const goToSlide = (index: number) => {
+        setCurrentIndex(index);
+    };
+
     return (
-        <div className="background">
-            <div className="posicionamento-logo">
-                <img src="https://github.com/joosilva/aperfeito_pisos/blob/main/assets/nome_marca_fundo_transparente.png?raw=true" alt="Logo da apêrfeito" className="logo" />
+        <div className="slide-container">
+            <div className="slide">
+                {imagens.map((imagem, index) => (
+                    <div
+                        key={index}
+                        className={`slide-item ${index === currentIndex ? 'ativo' : ''}`}
+                        style={{ backgroundImage: `url(${imagem})` }}
+                    ></div>
+                ))}
             </div>
-
-            <div className="posicionamento-foto">
-                <img src="https://github.com/joosilva/aperfeito_pisos/blob/main/assets/gilvan_transparente.png?raw=true"
-                    alt="Engenheiro, construtor com capacete de obra e camiseta preta e braços abertos com um sorriso no rosto."
-                    className="foto" />
-
-                <div className="posicionamento-texto">
-                    <h1 className="texto bold">PISOS</h1>
-                </div>
+            <div className="barra-navegacao">
+                {imagens.map((_, index) => (
+                    <span
+                        key={index}
+                        className={`ponto ${index === currentIndex ? 'ativo' : ''}`}
+                        onClick={() => goToSlide(index)}
+                    ></span>
+                ))}
             </div>
-
         </div>
     )
 }
