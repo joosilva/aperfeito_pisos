@@ -13,7 +13,7 @@ export const Contato = () => {
             </button>
             
             <button className="botao-2">
-                <a className="subtitulo regular" href="">Email</a>
+                <a className="subtitulo regular" href="mailto:contato@aperfeitopisos.com.br">Email</a>
                 <img className="email" src="https://github.com/joosilva/aperfeito_pisos/blob/main/assets/email.png?raw=true" alt="" />
             </button>
 
