@@ -104,3 +104,71 @@
         }
     }
 }
+
+.card-overlay {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: -50%;
+    left: -4vw;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media (max-width: $tablet-largura-maxima) {     
+        position: absolute;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        top: 0;
+        left: 0;
+        
+        width: 100vw;
+        height: 100vh;
+    }
+}
+
+.card-vinilico,
+.card-laminado,
+.card-boieserie, 
+.card-rodape {
+    background-color: $cor-branca;
+    padding: 20px;
+    z-index: 10;
+    width: 60%;
+    max-width: 500px;
+    border-radius: 12px; 
+
+    .titulo-card {
+        font-family: $fonte-principal;
+        color: $cor-texto-secundaria;
+
+        display: flex;
+        justify-content: center;
+    }
+
+    p {
+        font-family: $fonte-secundaria;
+        color: $cor-texto-secundaria;
+
+        margin-top: 15px;
+        text-align: center;
+    }
+}
+
+.fechar-card {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+
+    font-family: $fonte-secundaria;
+    background-color: transparent;
+    border: none;
+    color: black;
+    font-size: 1.5rem;
+    cursor: pointer;
+}

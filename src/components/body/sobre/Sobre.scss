@@ -39,23 +39,43 @@
     }
 
 
-    .titulo, .descricao {
+    .titulo, .subtitulo, .descricao {
         font-family: $fonte-principal;
         color: $cor-texto-principal;
 
         text-align: center;
         max-width: 100%;
-    }
-
-    .titulo {
-        padding: 1rem;
 
         z-index: 1;
+    }
+
+    .titulo, .subtitulo {
+        padding: 1rem;
     }
 
     .descricao {
         padding: 0 1rem 0 1rem;
+    }
 
-        z-index: 1;
+    h1.descricao {
+        margin-top: 1rem;
+    }
+}
+
+.parceiros {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+
+    .linha-1 {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .linha-2 {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
     }
 }
