@@ -106,7 +106,7 @@
 }
 
 .card-overlay {
-    position: absolute;
+    position: fixed;
     width: 100vw;
     height: 100vh;
     top: -50%;
@@ -118,7 +118,7 @@
     align-items: center;
 
     @media (max-width: $tablet-largura-maxima) {     
-        position: absolute;
+        position: fixed;
 
         display: flex;
         justify-content: center;
@@ -136,6 +136,7 @@
 .card-laminado,
 .card-boieserie, 
 .card-rodape {
+    position: fixed;
     background-color: $cor-branca;
     padding: 20px;
     z-index: 10;

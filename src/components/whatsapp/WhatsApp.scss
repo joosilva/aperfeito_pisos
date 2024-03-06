@@ -1,23 +1,16 @@
 .whatsapp {
-    position: absolute;
-
-    height: 100vh;
-    width: 100vw;
-
-    display: flex;
-    justify-content: end;
-    align-items: end;
-
-    background-color: rgba(0, 0, 0, 0);
+    position: fixed;
+    z-index: 10000;
 
     a.whatsapp {
         img.whatsapp {
-            width: 7vw;
+            bottom: 0.5rem;
+            right: 0.5rem;
+
+            min-width: 45px;
+            width: 5vw;
             height: auto;
 
-            padding: 1.5rem;
-
-            z-index: 1000;
 
             &:hover {
                 filter: drop-shadow(0 0 3px #00000064);

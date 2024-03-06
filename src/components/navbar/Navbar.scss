@@ -5,7 +5,7 @@ nav {
 
     width: 100vw;
 
-    z-index: 10;
+    z-index: 1000;
 
     position: sticky;
     top: 0;
@@ -48,7 +48,7 @@ nav {
 
                 margin-top: calc(15vh + 0.75rem*14);
                 background-color: #0000008b;
-                z-index: 20;
+                z-index: 2000;
 
                 li {
                     padding: 0.75rem;
