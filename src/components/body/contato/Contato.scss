@@ -14,7 +14,7 @@
 
         position: absolute;
 
-        background-color: #FFFFFF42;
+        background-color: #00000042;
 
         z-index: 0;
     }
@@ -22,6 +22,8 @@
     h1 {
         z-index: 2;
         text-shadow: 0 0 15px #00000050;
+
+        color: $cor-texto-principal;
     }
 
     width: 100vw;
