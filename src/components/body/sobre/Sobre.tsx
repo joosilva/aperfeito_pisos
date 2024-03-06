@@ -15,7 +15,7 @@ export const Sobre = () => {
             <div className="parceiros">
                 <div className="linha-1">
                     <img src="https://github.com/joosilva/aperfeito_pisos/blob/main/assets/eucafloor.png?raw=true" alt="Logo da eucafloor." />
-                    <img src="" alt="Logo da durafloor." />
+                    <img src="https://github.com/joosilva/aperfeito_pisos/blob/main/assets/durafloor.png?raw=true" alt="Logo da durafloor." />
                     <img src="https://github.com/joosilva/aperfeito_pisos/blob/main/assets/tarkett.png?raw=true" alt="Logo da tarkett." />
                     <img src="https://github.com/joosilva/aperfeito_pisos/blob/main/assets/santaluzia.png?raw=true" alt="Logo da santa luzia." />
                 </div>

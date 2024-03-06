@@ -67,6 +67,10 @@
     display: flex;
     flex-direction: column;
 
+    .linha-1 {
+        margin: 1.5rem 0;
+    }
+
     .linha-1,
     .linha-2 {
         width: 100%;
@@ -75,8 +79,14 @@
         justify-content: space-around;
         align-items: center;
 
+        z-index: 10;
+
         img {
             width: 15vw;
+
+            /*padding: 1rem;
+            border-radius: 1rem;
+            background-color: #FFFEFE5C;*/
         }
     }
 }
