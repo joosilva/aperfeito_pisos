@@ -14,7 +14,7 @@ export const Contato = () => {
             
             <button className="botao-2">
                 <a className="subtitulo regular" href="">Email</a>
-                <img src="https://github.com/joosilva/aperfeito_pisos/blob/main/assets/whatsapp_redondo.png?raw=true" alt="" />
+                <img className="email" src="https://github.com/joosilva/aperfeito_pisos/blob/main/assets/email.png?raw=true" alt="" />
             </button>
 
             <h1 className="descricao regular">Aturalmente nosso contato é feito inteiramente pelo WhatsApp. <br />
