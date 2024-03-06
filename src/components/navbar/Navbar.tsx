@@ -54,10 +54,12 @@ function Navbar() {
                         </li>
                     </ul>
 
-                    <div className="telefone">
-                        <img src="https://github.com/joosilva/aperfeito_pisos/blob/main/assets/whatsapp_redondo.png?raw=true" alt="" />
-                        <h2 className="subtitulo bold">(11) 93737-0612</h2>
-                    </div>
+                    <a target="_blank" href="https://wa.me/5511937370612?text=Ol%C3%A1.+Vim+pelo+site+e+gostaria+de+informa%C3%A7%C3%B5es%2Fsolicitar+um+or%C3%A7amento.">
+                        <div className="telefone">
+                            <img src="https://github.com/joosilva/aperfeito_pisos/blob/main/assets/whatsapp_redondo.png?raw=true" alt="" />
+                            <h2 className="subtitulo bold">(11) 93737-0612</h2>
+                        </div>
+                    </a>
                 </div>
             </nav>
         </>

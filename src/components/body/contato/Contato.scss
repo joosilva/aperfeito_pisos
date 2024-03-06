@@ -113,4 +113,15 @@
             margin-left: 0.2rem;
         }
     }
+
+    .redes {
+        display: flex;
+        justify-content: center;
+
+        width: 100vw;
+
+        img {
+            width: 5vw;
+        }
+    }
 }

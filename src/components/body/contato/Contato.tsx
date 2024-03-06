@@ -10,17 +10,18 @@ export const Contato = () => {
 
 
             <button className="botao-1">
-                <a className="subtitulo regular" href="https://wa.me/5511937370612?text=Ol%C3%A1.+Vim+pelo+site+e+gostaria+de+informa%C3%A7%C3%B5es%2Fsolicitar+um+or%C3%A7amento.">WhatsApp</a>
+                <a className="subtitulo regular" target="_blank"  href="https://wa.me/5511937370612?text=Ol%C3%A1.+Vim+pelo+site+e+gostaria+de+informa%C3%A7%C3%B5es%2Fsolicitar+um+or%C3%A7amento.">WhatsApp</a>
                 <img src="https://github.com/joosilva/aperfeito_pisos/blob/main/assets/whatsapp_redondo.png?raw=true" alt="" />
             </button>
             
             <button className="botao-2">
-                <a className="subtitulo regular" href="mailto:contato@aperfeitopisos.com.br">Email</a>
+                <a className="subtitulo regular" target="_blank" href="mailto:contato@aperfeitopisos.com.br?subject=Informa%C3%A7%C3%B5es/Or%C3%A7amento&body=Ol%C3%A1.+Vim+pelo+site+e+gostaria+de+informa%C3%A7%C3%B5es/solicitar+um+or%C3%A7amento.">Email</a>
                 <img className="email" src="https://github.com/joosilva/aperfeito_pisos/blob/main/assets/email.png?raw=true" alt="" />
             </button>
 
-            <h1 className="descricao regular">Aturalmente nosso contato é feito inteiramente pelo WhatsApp. <br />
-                Envie uma mensagem. Nossa equipe está pronta para te servir.</h1>
+            <div className="redes">
+                
+            </div>
         </div>
     )
 }
