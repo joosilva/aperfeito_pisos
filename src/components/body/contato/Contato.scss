@@ -1,7 +1,32 @@
 @import "../../../style/Style.scss";
 
 .contato {
+    .fundo {
+        width: 100vw;
+        
+        @media(max-width: $tablet-largura-maxima) {
+            height: 50vh;
+        }
+        
+        @media(min-width: $desktop-largura-minima) {
+            height: 75vh;
+        }
+
+        position: absolute;
+
+        background-color: #FFFFFF42;
+
+        z-index: 0;
+    }
+
+    h1 {
+        z-index: 2;
+    }
+
     width: 100vw;
+
+    background-image: url("https://github.com/joosilva/aperfeito_pisos/blob/main/assets/wood_texture.jpg?raw=true");
+    background-size: cover;
 
     display: flex;
     flex-direction: column;
@@ -40,6 +65,8 @@
 
         display: flex;
         align-items: center;
+
+        z-index: 2;
 
         @keyframes pulse {
             0% {

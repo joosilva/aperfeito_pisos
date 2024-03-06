@@ -3,6 +3,8 @@ import "./Contato.scss";
 export const Contato = () => {
     return (
         <div className="contato">
+            <div className="fundo" />
+
             <h1 className="titulo bold">Entre em Contato</h1>
             <h1 className="subtitulo bold">e solicite um orçamento gratuitamente:</h1>
 
