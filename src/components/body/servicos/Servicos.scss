@@ -125,6 +125,10 @@
 
         width: 100vw;
         height: 100vh;
+
+        .foto-desktop {
+            visibility: hidden;
+        }
     }
 }
 
@@ -146,6 +150,11 @@
 
         display: flex;
         justify-content: center;
+    }
+
+    .foto-desktop {
+        width: 50%;
+        height: auto;
     }
 
     p {
