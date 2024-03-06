@@ -30,7 +30,7 @@ export const Home = () => {
         },
         {
             imagem:
-                "https://github.com/joosilva/aperfeito_pisos/blob/main/assets/slide_4.jpg?raw=true",
+                "https://github.com/joosilva/aperfeito_pisos/blob/main/assets/slide_4.png?raw=true",
             texto: "Rodapé",
             alt: "Rodapé de poliestileno branco/colorido instalado em apartamento/casa com piso laminado/vinilico."
         },
