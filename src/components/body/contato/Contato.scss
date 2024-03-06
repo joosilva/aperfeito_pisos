@@ -120,8 +120,15 @@
 
         width: 100vw;
 
+        a {
+            z-index: 2;
+        }
+
         img {
-            width: 5vw;
+            width: 46px;
+            padding: 0 1rem;
+
+            z-index: 2;
         }
     }
 }
