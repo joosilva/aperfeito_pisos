@@ -14,10 +14,16 @@ export const Sobre = () => {
             <h1 className="descricao bold">Nossos Parceiros:</h1>
             <div className="parceiros">
                 <div className="linha-1">
-                    
+                    <img src="https://github.com/joosilva/aperfeito_pisos/blob/main/assets/eucafloor.png?raw=true" alt="Logo da eucafloor." />
+                    <img src="" alt="Logo da durafloor." />
+                    <img src="https://github.com/joosilva/aperfeito_pisos/blob/main/assets/tarkett.png?raw=true" alt="Logo da tarkett." />
+                    <img src="https://github.com/joosilva/aperfeito_pisos/blob/main/assets/santaluzia.png?raw=true" alt="Logo da santa luzia." />
                 </div>
                 <div className="linha-2">
-
+                    <img src="https://github.com/joosilva/aperfeito_pisos/blob/main/assets/quartzolit.png?raw=true" alt="Logo da quartzolit." />
+                    <img src="https://raw.githubusercontent.com/joosilva/aperfeito_pisos/e1ccecbcd862a6a2ba9a1faa846c5c165ca99a26/assets/vinilforte.svg" alt="Logo da vinilpisos." />
+                    <img src="https://github.com/joosilva/aperfeito_pisos/blob/main/assets/madebene.png?raw=true" alt="Logo da madebene." />
+                    <img src="https://github.com/joosilva/aperfeito_pisos/blob/main/assets/protec.png?raw=true" alt="Logo da protec." />
                 </div>
             </div>
         </div>

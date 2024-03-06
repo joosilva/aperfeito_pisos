@@ -11,11 +11,11 @@
     background-size: cover;
 
     @media(max-width: $tablet-largura-maxima) {
-        height: 60vh;
+        height: 80vh;
         background-position: center;
         
         .background-cor {
-            height: 60vh;
+            height: 80vh;
         }
     }
 
@@ -67,15 +67,16 @@
     display: flex;
     flex-direction: column;
 
-    .linha-1 {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-    }
-    
+    .linha-1,
     .linha-2 {
         width: 100%;
         display: flex;
         flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+
+        img {
+            width: 15vw;
+        }
     }
 }
