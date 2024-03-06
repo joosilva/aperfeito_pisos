@@ -24,7 +24,7 @@ export const Contato = () => {
                     <img src="https://github.com/joosilva/aperfeito_pisos/blob/main/assets/facebook.png?raw=true" alt="" />
                 </a>
                 <a target="_blank" href="https://www.instagram.com/aperfeitopisos/">
-                    <img src="https://github.com/joosilva/aperfeito_pisos/blob/main/assets/instagram.png?raw=true" alt="" />
+                    <img src="https://github.com/joosilva/aperfeito_pisos/blob/main/assets/instagram_transparente.png?raw=true" alt="" />
                 </a>
             </div>
         </div>
