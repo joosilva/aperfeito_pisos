@@ -114,6 +114,13 @@
         }
     }
 
+    .redes-texto {
+        font-family: $fonte-principal;
+        color: $cor-texto-principal;
+
+        margin-bottom: 10px;
+    }
+
     .redes {
         display: flex;
         justify-content: center;

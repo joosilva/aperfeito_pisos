@@ -19,12 +19,16 @@ export const Contato = () => {
                 <img className="email" src="https://github.com/joosilva/aperfeito_pisos/blob/main/assets/email.png?raw=true" alt="" />
             </button>
 
+            <h1 className="redes-texto subtitulo bold">
+                Nos siga nas redes sociais:
+            </h1>
+
             <div className="redes">
                 <a target="_blank" href="https://www.facebook.com/aperfeitopisos?mibextid=sCpJLy">
                     <img src="https://github.com/joosilva/aperfeito_pisos/blob/main/assets/facebook.png?raw=true" alt="" />
                 </a>
                 <a target="_blank" href="https://www.instagram.com/aperfeitopisos/">
-                    <img src="https://github.com/joosilva/aperfeito_pisos/blob/main/assets/instagram_transparente.png?raw=true" alt="" />
+                    <img src="https://github.com/joosilva/aperfeito_pisos/blob/main/assets/insta_transparente.png?raw=true" alt="" />
                 </a>
             </div>
         </div>

@@ -102,6 +102,7 @@ nav {
                         text-decoration: none;
                         font-family: $fonte-principal;
                         color: $cor-texto-principal;
+                        font-size: 18pt;
                     }
 
                     a:hover {
@@ -121,6 +122,7 @@ nav {
 
         display: flex;
         align-items: center;
+        padding-right: 1rem;
 
         a {
             text-decoration: none;
@@ -136,6 +138,12 @@ nav {
 
         img {
             width: 50px;
+            padding: 0;
         }
+    }
+
+    img {
+        width: 30px;
+        padding-right: 1rem;
     }
 }
