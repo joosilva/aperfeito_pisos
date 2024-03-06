@@ -2,6 +2,16 @@
 
 .contato {
     width: 100vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    font-family: $fonte-principal;
+    color: $cor-texto-secundaria;
     
     @media(max-width: $tablet-largura-maxima) {
         height: 50vh;
@@ -9,5 +19,51 @@
     
     @media(min-width: $desktop-largura-minima) {
         height: 75vh;
+    }
+
+    button {
+        border-radius: 2rem;
+        margin: 1.5rem 0;
+        padding: 0.5rem 1rem;
+        background-color: $cor-principal;
+
+        display: flex;
+        align-items: center;
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+                box-shadow: (0 5px 10px #00000064);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        &:hover {
+            background-color: $cor-secundaria;
+            animation-name: pulse;
+            animation-duration: 1.5s;
+            animation-iteration-count: infinite;
+            text-decoration: underline;
+            text-decoration-color: $cor-texto-principal;
+
+            &a:hover {
+                color: $cor-texto-secundaria;
+            }
+        }
+
+        a {
+            color: $cor-texto-principal;
+            text-decoration: none;
+        }
+
+        img {
+            width: 26px;
+            height: auto;
+        }
     }
 }
