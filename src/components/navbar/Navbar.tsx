@@ -53,6 +53,11 @@ function Navbar() {
                             <a href="#contato">Contato</a>
                         </li>
                     </ul>
+
+                    <div className="telefone">
+                        <img src="https://github.com/joosilva/aperfeito_pisos/blob/main/assets/whatsapp_redondo.png?raw=true" alt="" />
+                        <h2 className="subtitulo bold">(11) 93737-0612</h2>
+                    </div>
                 </div>
             </nav>
         </>

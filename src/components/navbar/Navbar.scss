@@ -113,4 +113,24 @@ nav {
             }
         }
     }
+
+    .telefone {
+        @media (max-width: $celular-largura-maxima) {
+            visibility: hidden;
+        }
+
+        display: flex;
+        align-items: center;
+
+        .subtitulo {
+            width: 150px;
+
+            font-family: $fonte-principal;
+            color: $cor-texto-principal;
+        }
+
+        img {
+            width: 50px;
+        }
+    }
 }
