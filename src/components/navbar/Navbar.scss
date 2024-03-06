@@ -117,7 +117,7 @@ nav {
 
     .telefone {
         @media (max-width: $celular-largura-maxima) {
-            visibility: hidden;
+            display: none;
         }
 
         display: flex;
