@@ -1,25 +1,42 @@
-import { useEffect, useState } from "react";
+import { useState, useEffect } from "react";
 import "./Home.scss";
+
+interface SlideProps {
+    imagem: string;
+    texto: string;
+}
 
 export const Home = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
-
-    const imagens = [
-        'imagem1.jpg',
-        'imagem2.jpg',
-        'imagem3.jpg',
-        'imagem4.jpg'
+    const slides: SlideProps[] = [
+        {
+            imagem:
+            "https://github.com/joosilva/aperfeito_pisos/blob/main/assets/slide_1.jpg?raw=true",
+            texto: "Piso Vinílico",
+        },
+        {
+            imagem:
+                "https://github.com/joosilva/aperfeito_pisos/blob/main/assets/slide_2.jpg?raw=true",
+            texto: "Piso Laminado",
+        },
+        {
+            imagem:
+                "https://github.com/joosilva/aperfeito_pisos/blob/main/assets/slide_3.jpg?raw=true",
+            texto: "Boiserie",
+        },
+        {
+            imagem:
+                "https://github.com/joosilva/aperfeito_pisos/blob/main/assets/slide_4.jpg?raw=true",
+            texto: "Rodapé",
+        },
     ];
 
-    const nextSlide = () => {
-        const nextIndex = (currentIndex + 1) % imagens.length;
-        setCurrentIndex(nextIndex);
-    };
-
     useEffect(() => {
-        const interval = setInterval(nextSlide, 10000);
+        const interval = setInterval(() => {
+            setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
+        }, 10000);
         return () => clearInterval(interval);
-    }, [currentIndex]);
+    }, []);
 
     const goToSlide = (index: number) => {
         setCurrentIndex(index);
@@ -28,23 +45,26 @@ export const Home = () => {
     return (
         <div className="slide-container">
             <div className="slide">
-                {imagens.map((imagem, index) => (
+                {slides.map((slide, index) => (
                     <div
                         key={index}
-                        className={`slide-item ${index === currentIndex ? 'ativo' : ''}`}
-                        style={{ backgroundImage: `url(${imagem})` }}
-                    ></div>
+                        className={`slide-item ${index === currentIndex ? "ativo" : ""}`}
+                        onClick={() => goToSlide(index)}
+                    >
+                        <img src={slide.imagem} alt={slide.texto} />
+                        <div className="texto-slide super-titulo bold">{slide.texto}</div>
+                    </div>
                 ))}
             </div>
             <div className="barra-navegacao">
-                {imagens.map((_, index) => (
+                {slides.map((_, index) => (
                     <span
                         key={index}
-                        className={`ponto ${index === currentIndex ? 'ativo' : ''}`}
+                        className={`ponto ${index === currentIndex ? "ativo" : ""}`}
                         onClick={() => goToSlide(index)}
                     ></span>
                 ))}
             </div>
         </div>
-    )
-}
+    );
+};
