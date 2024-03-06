@@ -4,6 +4,7 @@ import "./Home.scss";
 interface SlideProps {
     imagem: string;
     texto: string;
+    alt: string;
 }
 
 export const Home = () => {
@@ -13,21 +14,25 @@ export const Home = () => {
             imagem:
             "https://github.com/joosilva/aperfeito_pisos/blob/main/assets/slide_1.jpg?raw=true",
             texto: "Piso Vinílico",
+            alt: "Piso em vinílico instalado em sala de apartamento com bela vista para cidade."
         },
         {
             imagem:
                 "https://github.com/joosilva/aperfeito_pisos/blob/main/assets/slide_2.jpg?raw=true",
             texto: "Piso Laminado",
+            alt: "Piso laminado instalado em cômodo da casa com paredes em cimento queimado."
         },
         {
             imagem:
                 "https://github.com/joosilva/aperfeito_pisos/blob/main/assets/slide_3.jpg?raw=true",
             texto: "Boiserie",
+            alt: "Boiserie  na parede da sala de estar para dar textura de gesso com pintura na cor branca."
         },
         {
             imagem:
                 "https://github.com/joosilva/aperfeito_pisos/blob/main/assets/slide_4.jpg?raw=true",
             texto: "Rodapé",
+            alt: "Rodapé de poliestileno branco/colorido instalado em apartamento/casa com piso laminado/vinilico."
         },
     ];
 
@@ -51,7 +56,7 @@ export const Home = () => {
                         className={`slide-item ${index === currentIndex ? "ativo" : ""}`}
                         onClick={() => goToSlide(index)}
                     >
-                        <img src={slide.imagem} alt={slide.texto} />
+                        <img src={slide.imagem} alt={slide.alt} />
                         <div className="texto-slide super-titulo bold">{slide.texto}</div>
                     </div>
                 ))}
