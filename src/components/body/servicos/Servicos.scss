@@ -49,7 +49,8 @@
 
             .foto-1,
             .foto-2,
-            .foto-3 {
+            .foto-3,
+            .foto-4 {
                 padding: 5vw;
                 width: 90vw;
             }
@@ -82,7 +83,8 @@
 
             .foto-1,
             .foto-2,
-            .foto-3 {
+            .foto-3,
+            .foto-4 {
                 max-height: 40vh;
                 height: auto;
                 padding: 1.5rem;
@@ -93,7 +95,8 @@
 
             .foto-1:hover,
             .foto-2:hover,
-            .foto-3:hover {
+            .foto-3:hover,
+            .foto-4:hover {
                 transform: scale(1.1);
 
                 filter: drop-shadow(0 0 10px #00000070);
