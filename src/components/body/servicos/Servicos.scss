@@ -23,29 +23,15 @@
     }
 
     .background-servicos {
-        @media(max-width: $tablet-largura-maxima) {
+        @media(max-width: $celular-largura-maxima) {
             display: flex;
             flex-direction: column;
 
-            @keyframes slideIn {
-                from {
-                    opacity: 0;
-                    transform: translateY(100%);
-                }
+            .fotos{
 
-                to {
-                    opacity: 1;
-                    transform: translateY(0);
-                }
-            }
-
-            .fotos {
-                opacity: 0;
-            }
-
-            .animado {
                 animation: slideIn 1s forwards;
             }
+
 
             .foto-1,
             .foto-2,
@@ -56,8 +42,10 @@
             }
         }
 
-        @media(min-width: $desktop-largura-minima) {
+        @media(min-width: $tablet-largura-minima) {
             display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
             align-items: center;
             justify-content: space-around;
 
@@ -73,10 +61,6 @@
                 }
             }
 
-            .fotos {
-                opacity: 0;
-            }
-
             .animado {
                 animation: slideIn 2s forwards;
             }
@@ -85,7 +69,7 @@
             .foto-2,
             .foto-3,
             .foto-4 {
-                max-height: 40vh;
+                max-height: 30vh;
                 height: auto;
                 padding: 1.5rem;
                 transition: transform 0.3s;

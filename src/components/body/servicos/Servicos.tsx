@@ -14,7 +14,7 @@ export const Servicos = () => {
                     observer.unobserve(entry.target);
                 }
             });
-        }, { threshold: 0.6 });
+        }, { threshold: 0.2 });
 
         if (elementoRef.current) {
             observer.observe(elementoRef.current);
@@ -48,13 +48,15 @@ export const Servicos = () => {
         };
     }, []);
 
+    const width = window.innerWidth;
+
     return (
         <div className="servicos">
             <h1 className="titulo extra-bold">Nossos Serviços:</h1>
 
             <div className="background-servicos">
 
-                <div ref={elementoRef} className={`fotos ${elementoVisivel ? 'animado' : ''}`}>
+                <div ref={elementoRef} className={`fotos ${elementoVisivel || width <= 480 ? 'animado' : ''}`}>
                     {['vinilico', 'laminado', 'boieserie', 'rodape'].map((servico, index) => (
                         <img
                             key={index}
