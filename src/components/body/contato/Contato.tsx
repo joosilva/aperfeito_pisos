@@ -10,7 +10,7 @@ export const Contato = () => {
 
 
             <button className="botao-1">
-                <a className="subtitulo regular" href="">WhatsApp</a>
+                <a className="subtitulo regular" href="https://wa.me/5511937370612?text=Ol%C3%A1.+Vim+pelo+site+e+gostaria+de+informa%C3%A7%C3%B5es%2Fsolicitar+um+or%C3%A7amento.">WhatsApp</a>
                 <img src="https://github.com/joosilva/aperfeito_pisos/blob/main/assets/whatsapp_redondo.png?raw=true" alt="" />
             </button>
             
