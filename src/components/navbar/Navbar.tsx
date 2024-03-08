@@ -1,6 +1,6 @@
 import "./Navbar.scss";
-
 import { useState } from "react";
+import { Link } from "react-scroll";
 
 function Navbar() {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -9,22 +9,22 @@ function Navbar() {
         <>
             <nav>
                 <div className="navbar">
-                    <a href="#home">
+                    <Link to="home" smooth={true} duration={500}>
                         <img className="logo" src="https://github.com/joosilva/aperfeito_pisos/blob/main/assets/logo_nome_fundo_transparente.png?raw=true" alt="Logo da apêfeito" />
-                    </a>
+                    </Link>
                     <div className={menuOpen ? "menuOpen" : "navigation-cel"}>
                         <ul className="subtitulo regular">
                             <li>
-                                <a href="#home">Home</a>
+                                <Link to="home" smooth={true} duration={500}>Home</Link>
                             </li>
                             <li>
-                                <a href="#servicos">Serviços</a>
+                                <Link to="servicos" smooth={true} duration={500}>Serviços</Link>
                             </li>
                             <li>
-                                <a href="#sobre">Sobre Nós</a>
+                                <Link to="sobre" smooth={true} duration={500}>Sobre Nós</Link>
                             </li>
                             <li>
-                                <a href="#contato">Contato</a>
+                                <Link to="contato" smooth={true} duration={500}>Contato</Link>
                             </li>
                         </ul>
                     </div>
@@ -41,16 +41,16 @@ function Navbar() {
 
                     <ul className="navigation subtitutlo bold">
                         <li>
-                            <a href="#home">Home</a>
+                            <Link to="home" smooth={true} duration={500}>Home</Link>
                         </li>
                         <li>
-                            <a href="#servicos">Serviços</a>
+                            <Link to="servicos" smooth={true} duration={500}>Serviços</Link>
                         </li>
                         <li>
-                            <a href="#sobre">Sobre Nós</a>
+                            <Link to="sobre" smooth={true} duration={500}>Sobre Nós</Link>
                         </li>
                         <li>
-                            <a href="#contato">Contato</a>
+                            <Link to="contato" smooth={true} duration={500}>Contato</Link>
                         </li>
                     </ul>
 
