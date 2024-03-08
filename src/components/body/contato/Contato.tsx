@@ -14,10 +14,7 @@ export const Contato = () => {
                 <img src="https://github.com/joosilva/aperfeito_pisos/blob/main/assets/whatsapp_redondo.png?raw=true" alt="" />
             </button>
 
-            <button className="botao-2">
-                <a className="subtitulo regular" href="mailto:contato@aperfeitopisos.com.br?subject=Informa%C3%A7%C3%B5es/Or%C3%A7amento&body=Ol%C3%A1.+Vim+pelo+site+e+gostaria+de+informa%C3%A7%C3%B5es/solicitar+um+or%C3%A7amento.">Email</a>
-                <img className="email" src="https://github.com/joosilva/aperfeito_pisos/blob/main/assets/email.png?raw=true" alt="" />
-            </button>
+            <a className="email subtitulo regular" href="mailto:contato@aperfeitopisos.com.br?subject=Informa%C3%A7%C3%B5es/Or%C3%A7amento&body=Ol%C3%A1.+Vim+pelo+site+e+gostaria+de+informa%C3%A7%C3%B5es/solicitar+um+or%C3%A7amento.">contato@aperfeitopisos.com.br</a>
 
             <h1 className="redes-texto subtitulo bold">
                 Nos siga nas redes sociais:

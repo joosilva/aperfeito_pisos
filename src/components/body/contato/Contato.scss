@@ -121,6 +121,15 @@
         margin-bottom: 10px;
     }
 
+    .email {
+        font-family: $fonte-principal;
+        color: $cor-texto-principal;
+        text-decoration: none;
+        padding-bottom: 2rem;
+
+        z-index: 2;
+    }
+
     .redes {
         display: flex;
         justify-content: center;
